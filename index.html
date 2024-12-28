@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #f0f2f5, #ffffff);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        .logo {
+            margin-bottom: 20px;
+        }
+        
+        .logo img {
+            width: 60px;
+            height: 60px;
+        }
+        
+        .login-container {
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+        
+        .input-field {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .btn-login {
+            width: 100%;
+            padding: 10px;
+            background-color: #1877f2;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .btn-login:hover {
+            background-color: #165db6;
+        }
+        
+        .forgot-link, .create-link {
+            color: #1877f2;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+        }
+        
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+    </div>
+    <form action="" class="login-container" method="POST">
+        <input type="text" class="input-field" placeholder="Mobile number or email address">
+        <input type="password" class="input-field" placeholder="Password">
+        <button class="btn-login">Log in</button>
+        <a href="#" class="forgot-link">Forgotten Password?</a>
+        <a href="#" class="create-link">Create new account</a>
+    </form>
+    <div class="footer">© Meta</div>
+</body>
+</html>
